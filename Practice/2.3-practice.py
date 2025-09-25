@@ -3,14 +3,20 @@
 #float -a decimal number
 #charecter -a single glyph  "c"
 #boolagin_ true or false
-
+#parameter what is in the ()
 # how to define a variable 
 # name = value
+lowercase=False
+UPPERCASE=False
+UpperCamelCase=False
+lowercamelcase=False
+snake_case=True
+SCREAMING_SNAKE_CASE=False
 
-print(421)
-print(2+2)
-print(18459478567+9457348)
-x=10
-y=50
-potato=7
-print(x*y*potato)
+#naming rules
+# concise
+#get number as a string
+num=input("what number do you want to square\n>")
+#convert string to integer
+num=int(num)
+print(num * num)

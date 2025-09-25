@@ -1,0 +1,17 @@
+countdown = input("enter how many seconds are left until launch?")
+oxygen_tanks=input(" how many oxygen tanks they have for the mission?")
+food_packs=input("enter the number of food packs they have for the journey?")
+water_packs=input("how many water packs are on the ship?")
+
+print("you have")
+print(countdown + " seconds left")
+print(oxygen_tanks + " oxygen")
+print(food_packs + " food packs")
+print(water_packs + " water packs")
+
+oxygen_tanks=input(" confirm how many oxygen tanks they have for the mission?")
+print("you have")
+print(countdown + " seconds left")
+print(oxygen_tanks + " oxygen")
+print(food_packs + " food packs")
+print(water_packs + " water packs")
