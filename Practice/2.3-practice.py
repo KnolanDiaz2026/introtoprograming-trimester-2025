@@ -6,17 +6,10 @@
 #parameter what is in the ()
 # how to define a variable 
 # name = value
-lowercase=False
-UPPERCASE=False
-UpperCamelCase=False
-lowercamelcase=False
-snake_case=True
-SCREAMING_SNAKE_CASE=False
+#concatination adding strings together
 
 #naming rules
 # concise
 #get number as a string
-num=input("what number do you want to square\n>")
+
 #convert string to integer
-num=int(num)
-print(num * num)
