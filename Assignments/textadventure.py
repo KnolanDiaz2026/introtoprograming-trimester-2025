@@ -12,7 +12,7 @@ def start_adventure():
     else:
         print("Invalid choice. Try again.")
         start_adventure()
-# ending 1
+
 def go_home():
     print("You decide it's safer at home, you have a family.THE END")
 
@@ -48,7 +48,6 @@ def the_river():
 
 
 
-# ending 2
 def swim_across():
         print("you try and swim across but realize the current is too strong and get swept away and see a waterfall in the distance do you:")
         print("1.grab onto a overhaning branch")
@@ -90,7 +89,6 @@ def give():
 
 
 
-
 def the_swamp():
    print("you deside to test your luck in the swamp and run into the biggest snake you have ever seen do you:")
    print("1.RUN")
@@ -122,6 +120,94 @@ def wait_there():
   else:
         print("Invalid choice. Try again.")
         wait_there()
+def hear_him():
+      print("he offers to get you across the river, and give you bit of info for your journy, for a fee do you:")
+      print("1.pay fee")
+      print("2.dont pay fee")
+     
+      choice = input("> ")
+
+      if choice == "1":
+            pay_fee()
+      elif choice == "2":
+            dont_pay()
+      else:
+        print("Invalid choice. Try again.")
+        wait_there()
+
+
+def fight_him():
+      print("you kill him easily but cant get across the river")
+      hear_him()
+
+
+def pay_fee():
+      print(" he sends you across the river he tells you to remember the word ,macaroon, where do you go next")
+      print("1.through the dark forest")
+      print("2.through the village")
+      choice = input("> ")
+
+      if choice == "1":
+            dark_forest()
+      elif choice == "2":
+            go_villa()
+      else:
+        print("Invalid choice. Try again.")
+        hear_him()
+
+
+def dont_pay():
+      print("you tell him you will not pay he begins to walk away do you:")
+      print("1.force him to get you across")
+      print("2.let him leave and set up camp")
+      choice = input("> ")
+
+      if choice == "1":
+            force_him()
+      elif choice == "2":
+            set_up()
+      else:
+        print("Invalid choice. Try again.")
+        hear_him()
+
+def force_him():
+      print(" he sends you across the river where do you go next")
+      print("1.through the dark forest")
+      print("2.through the village")
+      choice = input("> ")
+
+      if choice == "1":
+            dark_forest()
+      elif choice == "2":
+            go_villa()
+      else:
+        print("Invalid choice. Try again.")
+        hear_him()
+
+def set_up():
+      print("you fall asleep in your camp and get stung by a scorpion")
+      hear_him()
+
+
+
+
+def dark_forest():
+      print("you enter the forest and see it has killer bats that chase you out. if only you had somthing to reatch them, see if thers somthing in the village")
+      hear_him()
+
+
+
+
+def go_villa():
+      print("you are walking through the village and are hungry but may need a bow do you:")
+      print("1.buy food")
+      print("2.buy a bow")
+      print("3.buy a cool hat")
+
+
+
+
+
 
 
 start_adventure()
