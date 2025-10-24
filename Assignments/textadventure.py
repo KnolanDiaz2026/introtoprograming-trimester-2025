@@ -138,7 +138,7 @@ def hear_him():
 
 def fight_him():
       print("you kill him easily but cant get across the river")
-      hear_him()
+      wait_there()
 
 
 def pay_fee():
@@ -193,7 +193,7 @@ def set_up():
 
 def dark_forest():
       print("you enter the forest and see it has killer bats that chase you out. if only you had somthing to reatch them, see if thers somthing in the village")
-      hear_him()
+      force_him()
 
 
 
@@ -203,6 +203,136 @@ def go_villa():
       print("1.buy food")
       print("2.buy a bow")
       print("3.buy a cool hat")
+      choice = input("> ")
+      if choice == "1":
+            buy_food()
+      elif choice == "2":
+            buy_bow()
+      elif choice == "3":
+            buy_hat()
+      else:
+        print("Invalid choice. Try again.")
+        go_villa()
+
+def buy_food():
+      print("you are no longer hungry and continue to dragon")
+      contin_drag()
+
+
+def buy_bow():
+      print("you now have a bow with unlimited arows do you:")
+      print("1.go to forest")
+      print("2.continue to dragon")
+      choice = input("> ")
+      if choice == "1":
+            contin_forest()
+      elif choice == "2":
+            contin_drag()  
+      else:
+        print("Invalid choice. Try again.")
+        go_villa()
+
+def buy_hat():
+      print("every one in town compliments your hat and you contine on your quest")
+      contin_drag()
+
+def contin_forest():
+      print("you go to the forest prepared for whatever is inside killer bats swoop in luckly you have a bow do you:")
+      print("1.kill all the bats")
+      print("2.burn forest down")
+      print("3.just leave the forest")
+      choice = input("> ")
+      if choice == "1":
+           kill_bats()
+      elif choice == "2":
+           burn_forest()
+      elif choice == "3":
+           leave_forest()
+      else:
+        print("Invalid choice. Try again.")
+        contin_forest()
+
+
+def kill_bats():
+      print("you kill all the bats and the villagers are so happy they make you the chief of the village")
+
+
+def burn_forest():
+      print("you brun down the forest and the whole village dies in the winter with no way to warm there homes")
+      contin_forest()
+
+def leave_forest():
+      contin_drag()
+
+
+def contin_drag():
+      print("you continue on your journy you see buildings in the distance do you:")
+      print("1.go castle")
+      print("2.go cave")
+      print("3.go abandon village")
+      choice = input("> ")
+      if choice == "1":
+            go_cast()
+      elif choice == "2":
+           go_cave()
+      elif choice == "3":
+           go_abvi()
+      else:
+        print("Invalid choice. Try again.")
+        go_villa()
+
+
+def go_cast():
+      print("you arive at the castle and get asked for the password to enter do you:")
+      print("1.tell pasward")
+      print("2.fight your way in")
+      print("3.walk away")
+      choice = input("> ")
+      if choice == "1":
+            tell_pass()
+      elif choice == "2":
+           fight_in()
+      elif choice == "3":
+            walk_away()
+      else:
+         print("Invalid choice. Try again.")
+         contin_drag()
+
+
+
+
+
+
+def go_cave():
+      print("you find a brown bear in the cave protecting its cubs do you:")
+      print("1.fight the bear")
+      print("2.RUN")
+      choice = input("> ")
+      if choice == "1":
+            fight_bear()
+      elif choice == "2":
+           run_bear()
+      else:
+        print("Invalid choice. Try again.")
+        contin_drag()
+
+
+
+
+def go_abvi():
+      print("you walk through the village somthing seems off do you:")
+      print("1.leave")
+      print("2.explore and set up camp")
+      choice = input("> ")
+      if choice == "1":
+            leave_avilla()
+      elif choice == "2":
+           ex_sup()
+      else:
+        print("Invalid choice. Try again.")
+        contin_drag()
+
+
 
 
 
