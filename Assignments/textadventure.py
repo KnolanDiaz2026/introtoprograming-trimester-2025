@@ -298,6 +298,78 @@ def go_cast():
          print("Invalid choice. Try again.")
          contin_drag()
 
+def tell_pass():
+     print("1.macguy")
+     print("2.macroon")
+     print("3.toto")
+     choice = input("> ")
+     if choice == "1":
+            macguy()
+     elif choice == "2":
+           macroon()
+     elif choice == "3":
+            toto()
+     else:
+         print("Invalid choice. Try again.")
+         go_cast()
+
+def macguy():
+     print("nope try again")
+     tell_pass()
+
+def toto():
+ print("nope try again")
+ tell_pass()
+
+
+def macroon():
+     print("allright come on in what now:")
+     print("1.take huge sword")
+     print("2.leave to kill dragon ")
+     choice = input("> ")
+     if choice == "1":
+            take_s()
+     elif choice == "2":
+           killdrag()
+     else:
+         print("Invalid choice. Try again.")
+         go_cast()
+
+def killdrag():
+     print("the dragons scales are too hrad to cut through with your current sword")
+     contin_drag()
+
+
+def take_s():
+     print("now you have everything you need")
+     print("1.fight dragon")
+     print("2.give up")
+     choice = input("> ")
+     if choice == "1":
+            fig_dr()
+     elif choice == "2":
+           give_up()
+     else:
+         print("Invalid choice. Try again.")
+         go_cast()
+
+def fig_dr():
+     print("you kill the dragon THE END")
+     
+def give_up():
+      print("try again coward")
+
+
+
+def fight_in():
+     print("6 gaurds men rush out and you are exicuted")
+     go_cast()
+     
+
+def walk_away():
+     contin_drag()
+
+
 
 
 
@@ -316,6 +388,39 @@ def go_cave():
         print("Invalid choice. Try again.")
         contin_drag()
 
+def fight_bear():
+     print("you sucsesfully kill the bear and notice somthing in the back of the cave")
+     print("1.investigate")
+     print("2.leave with the bear fur")
+     choice = input("> ")
+     if choice == "1":
+            invest_gate()
+     elif choice == "2":
+           lv_fur()
+     else:
+        print("Invalid choice. Try again.")
+        go_cave()
+
+
+def invest_gate():
+      print("you find a battle axe and leave your sword")
+      take_s()
+def lv_fur():
+     print("you leave with a cool bear skin cape and go fight the dragon")
+     killdrag()
+
+def run_bear():
+     print("you make it out the cave safely where to next")
+     print("1.go castle")
+     print("2.go abandon village")
+     choice = input("> ")
+     if choice == "1":
+            go_cast()
+     elif choice == "2":
+           go_abvi()
+     else:
+        print("Invalid choice. Try again.")
+        go_cave()
 
 
 
@@ -333,9 +438,14 @@ def go_abvi():
         contin_drag()
 
 
+def leave_avilla():
+     print("you deside it would be safer somewhere else")
+     contin_drag()
 
 
-
+def ex_sup():
+     print("you get eaten in your sleep by the moose man")
+     contin_drag()
 
 
 
